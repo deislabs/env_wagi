@@ -1,5 +1,5 @@
 fn main() {
-    println!("Status: 200\nContent-Type: text/plain\n");
+    println!("Status: 200\nContent-Type: text/plain\nX-Foo-Header: Bar\n");
 
     println!("### Arguments ###");
     std::env::args().for_each(|a| println!("arg: {}", a));
