@@ -13,6 +13,7 @@ You can test the output of this command using `cargo run`.
 However, when building it for WAGI, you need to compile this as Web Assembly with WASI support:
 
 ```
+$ rustup target add wasm32-wasi # You only need to do this once to install the wasm32-wasi compiler
 $ cargo build --target wasm32-wasi --release
 ```
 
